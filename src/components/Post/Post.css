@@ -1,0 +1,86 @@
+.wrap {
+  padding: 15px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.wrap.comment {
+  box-shadow: none;
+  margin: 0 -15px;
+  border-top: 1px solid #DDD;
+}
+
+.wrap.deleting:after {
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.wrap.deleting:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.content {
+  background-color: #ADDDFF;
+  margin: -15px;
+  padding: 15px;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 700;
+  color: #555;
+}
+
+.title {
+  font-size: 25px;
+  font-family: 'Roboto Slab', serif;
+  margin: 5px 0;
+  line-height: 1.1;
+}
+
+.comment .title {
+  font-size: 18px;
+}
+
+.body {
+  color: #444;
+}
+
+.comments {
+  margin: 15px 0 -15px;
+}
+
+.statusText {
+  margin: 15px 0 -15px;
+  padding: 15px;
+  color: #888;
+}
+
+.delete {
+  float: right;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0;
+  transition: opacity 100ms ease;
+}
+
+.wrap:hover .delete {
+  opacity: 1;
+}
+
+.mark {
+  background-color: #FF6;
+}

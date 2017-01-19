@@ -1,0 +1,70 @@
+.wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #666;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+
+.content {
+  max-width: 1010px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+.title {
+  margin: 0;
+  color: #EEE;
+}
+
+.icon {
+  font-size: 45px;
+  color: #FFF;
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  user-select: none;
+}
+
+.filterOpened .icon {
+  transform: none;
+  top: -7px;
+}
+
+.filter {
+  display: none;
+  text-align: right;
+}
+
+@media (min-width: 600px) {
+  .icon {
+    display: none;
+  }
+  .filter {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+}
+
+.filterOpened .filter {
+  display: block;
+}
+
+.filterField {
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    outline: none;
+    border: 2px solid #999;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}

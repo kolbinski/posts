@@ -1,0 +1,13 @@
+.wrap {
+  min-height: 100%;
+}
+
+.content {
+    max-width: 1010px;
+    margin: 60px auto 15px;
+    padding: 0 15px;
+}
+
+.bg {
+  padding-top: 15px;
+}

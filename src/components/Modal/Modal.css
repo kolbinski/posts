@@ -1,0 +1,32 @@
+.apla {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: default;
+  z-index: 200;
+}
+
+.overlay {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  padding: 0 15px;
+  z-index: 250;
+  margin-bottom: 30px;
+}
+
+.close {
+  color: #FFF;
+  font-size: 50px;
+  text-decoration: none;
+  position: absolute;
+  bottom: calc(100% - 10px);
+  right: 15px;
+}
